@@ -2,6 +2,8 @@
 
 tar -czf /tmp/myhome_directory.tar.gz /c/users/huynh304/Project-2/
 #This bash script is used to backup a user's home directory to /tmp/.
+function backup {
+
 if [ -z $1]; then
 	user=$(whoami)
 else
@@ -51,3 +53,8 @@ if [ $src_files -eq $arch_files ]; then
 else 
 	echo "Backup of $input failed!"
 fi
+}
+
+for directory in $*; do
+    backup $directory
+done;
