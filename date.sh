@@ -1,0 +1,3 @@
+#!/use/bin/bash
+
+date
