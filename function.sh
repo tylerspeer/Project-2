@@ -6,5 +6,3 @@ function user_details {
 }
 
 user_details
-user_details
-
